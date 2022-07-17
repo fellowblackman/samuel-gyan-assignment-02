@@ -35,15 +35,14 @@ assignment.sumOfNumbers = sumOfNumbers;
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
+
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
-   var ctr = 0;
-    while (arrayOfNumbers) {
-    ctr = arrayOfNumbers % 2 === 0;
-    arrayOfNumbers = Math.floor(arrayOfNumbers / 10);
-  }
-  return ctr;
-}
+    var count = arrayOfNumbers.filter(num =>{
+      return num % 2 == 0;
+    });
+    return count.length;
+};
+console.log(countEvenNumbers(arrayOfNumbers));
 
 assignment.countEvenNumbers = countEvenNumbers;
 
