@@ -23,7 +23,6 @@ for (let i = 0; i < arrayOfNumbers.length; i++) {
     console.log(sum);
 };
 
-assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
